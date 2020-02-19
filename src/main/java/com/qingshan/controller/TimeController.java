@@ -35,7 +35,7 @@ public class TimeController {
     }
     @RequestMapping("/getTimes")
     public ModelAndView getTimes(){
-        HashMap<String, Integer> map1 = new HashMap<>();
+        HashMap<String, Integer> map1 = new HashMap<String, Integer>();
         int days = timeServcie.getTime();
         map1.put("caculateTime",days);
 
