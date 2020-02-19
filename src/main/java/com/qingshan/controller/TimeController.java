@@ -25,7 +25,7 @@ public class TimeController {
             beginTime=format;
         }
         int days = timeServcie.getTime(beginTime);
-        HashMap<String, Integer> map = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
         map.put("caculateTime",days);
         return new ModelAndView("simpleWebShow",map);
     }
